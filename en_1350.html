@@ -1,0 +1,174 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+
+
+
+
+      <meta id="CurrentLanguage" http-equiv="content-language" content="en" />
+    <link rel="alternate" hreflang="he" href="http://ytlv.co.il/פעילות-בתא/קשר-של-אמת.aspx" />
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8"> 	
+  <title>Yeshiva Gevoha Ma’aleh Eliyahu</title>
+  <meta name="description" content='' />
+  <meta name="keywords" content='' /> 
+  <meta name="robots" content='' >
+  
+ 
+  <!--======== JQuery =========-->
+ 
+  <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery-migrate-1.1.1.min.js"></script>
+	<script>
+      function getLang() { 
+		  var metas = document.getElementsByTagName('meta'); 
+		  
+		  for (i=0; i<metas.length; i++) { 
+			  if (metas[i].getAttribute("id") == "CurrentLanguage") { 
+				  return metas[i].getAttribute("content"); 
+			  } 
+		  } 
+		  
+		  return "";
+	  } 
+		var CL= getLang();
+		if( CL=="en"){
+			$('head').append('<link href="/css/styleEn.css" rel="stylesheet" type="text/css">');			
+		}else{
+			$('head').append( '<link href="/css/style.css" rel="stylesheet" type="text/css">');
+		};
+		$(document).ready(function(){
+			if( CL=="en"){document.getElementById("logoImg").src = "/images/logoEn.png";};
+		});
+	</script>
+  
+   <!-- ============ dropDown Menu ============== -->
+    <link rel="stylesheet"  href="css/superfish.css" /> 
+      <script type="text/javascript" src="scripts/dropdown/hoverIntent.js"></script>
+      <script type="text/javascript" src="scripts/dropdown/superfish.js"></script>
+     <script type="text/javascript">     
+      jQuery(function(){
+        jQuery('ul.sf-menu').superfish();
+    });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.sf-with-ul').click(function (e) {
+                e.preventDefault();
+            });			
+        });
+    </script>
+  <!-- ============================================= -->
+
+  
+ 
+<!-- ============================= jScrollPane =============================== -->
+          <!-- styles needed by jScrollPane -->
+        <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+
+        <!-- the mousewheel plugin - optional to provide mousewheel support -->
+        <script type="text/javascript" src="scripts/jquery.mousewheel.js"></script>
+
+        <!-- the jScrollPane script -->
+        <script type="text/javascript" src="scripts/jquery.jscrollpane.min.js"></script>
+        <script type="text/javascript">
+            $('document').ready(function () {
+                $('.ContentText').jScrollPane({
+                    verticalDragMinHeight: 46,
+                    verticalDragMaxHeight: 46
+                }
+                );
+            });
+        </script>
+  
+  <!-- ============================================================ -->
+    <!-- =================== JQ Preload Page ======================== -->
+  <script src="scripts/jquery.queryloader2.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $("#slideshow").queryLoader2({
+              barColor: "#d9dadc",
+              backgroundColor: "#d9dadc",
+              percentage: false,
+              barHeight: 1,
+              completeAnimation: "fade",
+              minimumTime: 100
+          });
+      });
+  </script>
+  <!-- ============================================================ -->
+
+ 
+  
+</head>
+<body>
+
+
+
+    
+  <div class="header">
+     <div class="nav_bg">
+		 <div class="LanguageSwitcher">
+		      <strong>
+        <img src="css/MultiLanguage/flags/us.png" alt="English" title="English"/></strong>
+    <a href="פעילות-בתא/קשר-של-אמת.html">
+        <img src="css/MultiLanguage/flags/il.png" alt="עברית" title="עברית"/></a>
+
+		 </div>
+        <div class="wrapper">
+           <ul class="navigation sf-menu topnavi">
+            <li class="main"><a class="main_nav" href="/">About</a><ul class="dropdown"><li class="inner_li"><a class="inner_link" href="en_about/about-the-yeshiva.html">About the Yeshiva</a></li><li class="inner_li"><a class="inner_link" href="en_about/torah-soldiers.html">Torah Soldiers</a></li><li class="inner_li"><a class="inner_link" href="en_about/post-army.html">Post-Army</a></li></ul></li><li class="main"><a class="main_nav" href="en_torani-community.html">Torani Community</a><ul class="dropdown"><li class="inner_li"><a class="inner_link" href="en_torani-community/the-garin-torani.html">The Garin Torani</a></li><li class="inner_li"><a class="inner_link" href="en_torani-community/national-service-girls.html">National Service girls</a></li><li class="inner_li"><a class="inner_link" href="en_torani-community/kesher-bakehilla.html">Kesher Bakehilla</a></li></ul></li><li class="main"><a href="en_activities-in-tel-aviv.html" class="selected">Activities in Tel Aviv</a><ul class="dropdown"><li class="inner_li"><a class="inner_link" href="en_activities-in-tel-aviv/bar-mitzva-connection.html">Bar Mitzva Connection</a></li><li class="inner_li"><a class="inner_link" href="en_activities-in-tel-aviv/study-partners.html">Study Partners</a></li><li class="inner_li"><a class="inner_link" href="en_activities-in-tel-aviv/a-heart-for-the-sick.html">A Heart for the Sick</a></li><li class="inner_li"><a class="inner_link" href="en_activities-in-tel-aviv/bond-of-truth.html">Bond of Truth</a></li></ul></li><li class="main"><a class="main_nav" href="en_eliyahu-miron_-z_l.html">Eliyahu Miron, z”l</a></li><li class="main"><a class="main_nav" href="en_yeshiva-weeks.html">Yeshiva weeks</a></li><li class="main"><a class="main_nav" href="en_be-a-partner_.html">Be a Partner!</a></li><li class="main"><a class="main_nav" href="en_contact-us.html">Contact us</a></li>
+           </ul>
+        </div>
+    </div>
+  </div>
+  <div class="pageBg"> 
+    <div class="pageWrap">
+      <a href="en_index.html" title="ישיבת תל אביב ”מעלה אליהו“">
+             <img id="logoImg" src="images/logo.png" alt="ישיבת תל אביב ”מעלה אליהו“" />
+         </a>
+    
+    <div class="contentPageWrap">
+      
+        <div id="frame" style="height: 177px;">
+            <div id="slideshow" >
+                <img src='media/2581/emet.jpg' alt='Bond of Truth' class="active" />                 
+            </div>
+        </div>        
+        <div class="imgTitle">
+            <span class="imgTitleLeft"></span>
+          <span class="imgTitleCenter"><h2>Bond of Truth</h2></span>
+            <span class="imgTitleRight"></span>
+        </div>
+        <br /><h1>Bond of Truth</h1>
+        <div class="ContentText">            
+            <div style="padding-right: 25px;">
+                <p>Losing a loved one is one of the most meaningful and difficult events in one’s life. The process of Jewish mourning focuses on the memory and honor of the deceased, and helps the bereaved family cope with their loss in a constructive and healthy way.</p>
+<p>The world of Jewish tradition and values isn’t limited to times when life is proceeding smoothly and happily, but continues to connect Jews during the difficult moments of death and loss. The Jewish Culture Connection, together with the Tel Aviv-Jaffa Burial Society, operates a program to chaperone grieving families and help them cope with many aspects of mourning, both during the shiva period and beyond.</p>
+<p>We offer an instructional pamphlet that explains the halachic and logistical aspects of the mourning. We are also there to help with the technical aspects of shiva –chairs for those coming to offer condolences, siddurim for those who will be conducting services in their home, help organizing the prayers, and more.</p>
+<p>We offer suggestions for memorializing the deceased: saying Kaddish, learning sessions or educational programs in his memory and more. These support services are provided to anyone interested, free of charge.</p>
+<p>We are here for you. We share in your grief and really want to help and support you.</p>
+<p>We are here for you – because this is what connects us.    </p>
+<p>Visit the Bond of Truth website at: <a href="http://www.keshertlv.co.il/EN/emet.php">www.keshertlv.co.il/EN/emet.php</a></p>
+            </div>
+        </div>      
+    </div>
+
+    </div>  
+  </div>
+  <div id="footer">
+    <div id="UpperFooter">
+        <div id="UFimg"></div>        
+    </div>
+    <div id="creditLine">
+      <span style="float:right">Developed by: TWB. Designed by: Studio-Maof</span>
+        <span style="float:left">The Yeshiva Gevoha of Tel Aviv 6 Henrietta Szold Street, Tel: 03-6959917</span>
+    </div>
+  </div>
+  
+</body>
+</html>

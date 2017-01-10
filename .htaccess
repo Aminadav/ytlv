@@ -1,0 +1,77 @@
+# invoke rewrite engine
+RewriteEngine On
+RewriteBase /
+# Redirect to www
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+#Redirect 400,401,403,404,500 to main website
+ErrorDocument 400 http://ytlv.co.il
+ErrorDocument 401 http://ytlv.co.il
+ErrorDocument 403 http://ytlv.co.il
+ErrorDocument 404 http://ytlv.co.il
+ErrorDocument 500 http://ytlv.co.il
+RewriteRule ^index.html$ / [L,R=301]
+redirectMatch 301 ^/%D7%A2%D7%9C\-%D7%94%D7%99%D7%A9%D7%99%D7%91%D7%94\/%D7%9E%D7%A2%D7%9C%D7%94\-%D7%90%D7%9C%D7%99%D7%94%D7%95\.aspx/?$ על-הישיבה/מעלה-אליהו.html
+redirectMatch 301 ^/%D7%A2%D7%9C\-%D7%94%D7%99%D7%A9%D7%99%D7%91%D7%94\/%D7%97%D7%99%D7%99%D7%9C%D7%99%D7%9D\-%D7%91%D7%AA%D7%95%D7%A8%D7%94\.aspx/?$ על-הישיבה/חיילים-בתורה.html
+redirectMatch 301 ^/%D7%A2%D7%9C\-%D7%94%D7%99%D7%A9%D7%99%D7%91%D7%94\/%D7%91%D7%95%D7%92%D7%A8%D7%99\-%D7%A6%D7%91%D7%90\.aspx/?$ על-הישיבה/בוגרי-צבא.html
+redirectMatch 301 ^/%D7%92%D7%A8%D7%A2%D7%99%D7%9F\-%D7%97%D7%91%D7%A8%D7%AA%D7%99\.aspx/?$ גרעין-חברתי.html
+redirectMatch 301 ^/%D7%92%D7%A8%D7%A2%D7%99%D7%9F\-%D7%97%D7%91%D7%A8%D7%AA%D7%99\/%D7%A2%D7%9C\-%D7%94%D7%92%D7%A8%D7%A2%D7%99%D7%9F\.aspx/?$ גרעין-חברתי/על-הגרעין.html
+redirectMatch 301 ^/%D7%92%D7%A8%D7%A2%D7%99%D7%9F\-%D7%97%D7%91%D7%A8%D7%AA%D7%99\/%D7%92%D7%A8%D7%A2%D7%99%D7%9F\-%D7%91%D7%A0%D7%95%D7%AA\-%D7%A9%D7%99%D7%A8%D7%95%D7%AA\.aspx/?$ גרעין-חברתי/גרעין-בנות-שירות.html
+redirectMatch 301 ^/%D7%92%D7%A8%D7%A2%D7%99%D7%9F\-%D7%97%D7%91%D7%A8%D7%AA%D7%99\/%D7%A7%D7%A9%D7%A8\-%D7%91%D7%A7%D7%94%D7%99%D7%9C%D7%94\.aspx/?$ גרעין-חברתי/קשר-בקהילה.html
+redirectMatch 301 ^/%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%AA\-%D7%91%D7%AA%D7%90\.aspx/?$ פעילות-בתא.html
+redirectMatch 301 ^/%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%AA\-%D7%91%D7%AA%D7%90\/%D7%A7%D7%A9%D7%A8\-%D7%91%D7%A8\-%D7%9E%D7%A6%D7%95%D7%95%D7%94\.aspx/?$ פעילות-בתא/קשר-בר-מצווה.html
+redirectMatch 301 ^/פעילות\-בתא\/קשר\-בר\-מצווה\.html$ /
+redirectMatch 301 ^/%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%AA\-%D7%91%D7%AA%D7%90\/%D7%A9%D7%95%D7%AA%D7%A4%D7%99%D7%9D\-%D7%97%D7%91%D7%A8%D7%95%D7%AA%D7%95%D7%AA\.aspx/?$ פעילות-בתא/שותפים-חברותות.html
+redirectMatch 301 ^/%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%AA\-%D7%91%D7%AA%D7%90\/%D7%9C%D7%91\-%D7%9C%D7%97%D7%95%D7%9C%D7%99%D7%9D\.aspx/?$ פעילות-בתא/לב-לחולים.html
+redirectMatch 301 ^/%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%AA\-%D7%91%D7%AA%D7%90\/%D7%A7%D7%A9%D7%A8\-%D7%A9%D7%9C\-%D7%90%D7%9E%D7%AA\.aspx/?$ פעילות-בתא/קשר-של-אמת.html
+redirectMatch 301 ^/%D7%90%D7%9C%D7%99%D7%94%D7%95\-%D7%9E%D7%99%D7%A8%D7%95%D7%9F\-%D7%96%D7%9C\.aspx/?$ אליהו-מירון-זל.html
+redirectMatch 301 ^/%D7%A9%D7%91%D7%95%D7%A2\-%D7%99%D7%A9%D7%99%D7%91%D7%94\.aspx/?$ שבוע-ישיבה.html
+redirectMatch 301 ^/%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\.aspx/?$ שיעורים.html
+redirectMatch 301 ^/%D7%94%D7%99%D7%94\-%D7%A9%D7%95%D7%AA%D7%A3\!\.aspx/?$ היה-שותף_.html
+redirectMatch 301 ^/היה\-שותף_\.html$ /
+redirectMatch 301 ^/%D7%A6%D7%95%D7%A8\-%D7%A7%D7%A9%D7%A8\.aspx/?$ צור-קשר.html
+redirectMatch 301 ^/%D7%A2%D7%A8%D7%91\-%D7%94%D7%95%D7%A7%D7%A8%D7%94\.aspx/?$ ערב-הוקרה.html
+redirectMatch 301 ^/about\/about\-the\-yeshiva\.aspx/?$ en_about/about-the-yeshiva.html
+redirectMatch 301 ^/about\/torah\-soldiers\.aspx/?$ en_about/torah-soldiers.html
+redirectMatch 301 ^/about\/post\-army\.aspx/?$ en_about/post-army.html
+redirectMatch 301 ^/torani\-community\.aspx/?$ en_torani-community.html
+redirectMatch 301 ^/torani\-community\/the\-garin\-torani\.aspx/?$ en_torani-community/the-garin-torani.html
+redirectMatch 301 ^/torani\-community\/national\-service\-girls\.aspx/?$ en_torani-community/national-service-girls.html
+redirectMatch 301 ^/torani\-community\/kesher\-bakehilla\.aspx/?$ en_torani-community/kesher-bakehilla.html
+redirectMatch 301 ^/activities\-in\-tel\-aviv\.aspx/?$ en_activities-in-tel-aviv.html
+redirectMatch 301 ^/activities\-in\-tel\-aviv\/bar\-mitzva\-connection\.aspx/?$ en_activities-in-tel-aviv/bar-mitzva-connection.html
+redirectMatch 301 ^/activities\-in\-tel\-aviv\/study\-partners\.aspx/?$ en_activities-in-tel-aviv/study-partners.html
+redirectMatch 301 ^/activities\-in\-tel\-aviv\/a\-heart\-for\-the\-sick\.aspx/?$ en_activities-in-tel-aviv/a-heart-for-the-sick.html
+redirectMatch 301 ^/activities\-in\-tel\-aviv\/bond\-of\-truth\.aspx/?$ en_activities-in-tel-aviv/bond-of-truth.html
+redirectMatch 301 ^/eliyahu\-miron,\-z%E2%80%9Dl\.aspx/?$ en_eliyahu-miron_-z_l.html
+redirectMatch 301 ^/yeshiva\-weeks\.aspx/?$ en_yeshiva-weeks.html
+redirectMatch 301 ^/be\-a\-partner\!\.aspx/?$ en_be-a-partner_.html
+redirectMatch 301 ^/contact\-us\.aspx/?$ en_contact-us.html
+redirectMatch 301 ^/%d7%a9%d7%99%d7%a2%d7%95%d7%a8%d7%99%d7%9d\-%d7%91%d7%91%d7%a0%d7%99%d7%99%d7%94\.aspx/?$ en_virtual-beit-midrash.html
+redirectMatch 301 ^/1380/?$ en_1380.html
+redirectMatch 301 ^/1343/?$ en_1343.html
+redirectMatch 301 ^/1347/?$ en_1347.html
+redirectMatch 301 ^/1349/?$ en_1349.html
+redirectMatch 301 ^/1340/?$ en_1340.html
+redirectMatch 301 ^/1348/?$ en_1348.html
+redirectMatch 301 ^/1344/?$ en_1344.html
+redirectMatch 301 ^/1350/?$ en_1350.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%9E%D7%A8%D7%93%D7%9B%D7%99\-%D7%A9%D7%98%D7%A8%D7%A0%D7%91%D7%A8%D7%92\.aspx/?$ ריכוז-שיעורים/הרב-מרדכי-שטרנברג.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%97%D7%99%D7%99%D7%9D\-%D7%92%D7%A0%D7%A5\.aspx/?$ ריכוז-שיעורים/הרב-חיים-גנץ.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%93%D7%95%D7%93\-%D7%98%D7%95%D7%A8%D7%A0%D7%A8\.aspx/?$ ריכוז-שיעורים/הרב-דוד-טורנר.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%99%D7%95%D7%A8%D7%9D\-%D7%9E%D7%95%D7%A9%D7%A7%D7%95%D7%91%D7%99%D7%A5\.aspx/?$ ריכוז-שיעורים/הרב-יורם-מושקוביץ.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%9E%D7%90%D7%99%D7%A8\-%D7%94%D7%99%D7%9C%D7%91%D7%99%D7%A5\.aspx/?$ ריכוז-שיעורים/הרב-מאיר-הילביץ.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%99%D7%95%D7%A1%D7%A3\-%D7%A7%D7%9C%D7%A0%D7%A8\.aspx/?$ ריכוז-שיעורים/הרב-יוסף-קלנר.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%99%D7%90%D7%99%D7%A8\-%D7%92%D7%9C%D7%A1\.aspx/?$ ריכוז-שיעורים/הרב-יאיר-גלס.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%9E%D7%A9%D7%94\-%D7%9C%D7%95%D7%99\.aspx/?$ ריכוז-שיעורים/הרב-משה-לוי.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%A0%D7%93%D7%91\-%D7%A4%D7%A8%D7%99%D7%93%D7%9E%D7%9F\.aspx/?$ ריכוז-שיעורים/הרב-נדב-פרידמן.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%A7%D7%95%D7%91%D7%99\-%D7%93%D7%A0%D7%94\.aspx/?$ ריכוז-שיעורים/הרב-קובי-דנה.html
+redirectMatch 301 ^/ריכוז\-שיעורים\/הרב\-קובי\-דנה\.html$ /
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%90%D7%9E%D7%99%D7%A8\-%D7%93%D7%95%D7%9E%D7%9F\.aspx/?$ ריכוז-שיעורים/הרב-אמיר-דומן.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%A6%D7%99%D7%9E%D7%91%D7%9C%D7%99%D7%A1%D7%98\.aspx/?$ ריכוז-שיעורים/הרב-צימבליסט.html
+redirectMatch 301 ^/%D7%A8%D7%99%D7%9B%D7%95%D7%96\-%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\/%D7%94%D7%A8%D7%91\-%D7%9E%D7%A9%D7%94\-%D7%92%D7%A0%D7%A5\.aspx/?$ ריכוז-שיעורים/הרב-משה-גנץ.html
+redirectMatch 301 ^/%D7%A2%D7%9C\-%D7%94%D7%99%D7%A9%D7%99%D7%91%D7%94\/%D7%A2%D7%93%D7%9B%D7%95%D7%A0%D7%99\-%D7%94%D7%99%D7%A9%D7%99%D7%91%D7%94\.aspx/?$ על-הישיבה/עדכוני-הישיבה.html
+redirectMatch 301 ^/על\-הישיבה\/עדכוני\-הישיבה\.html$ /
+redirectMatch 301 ^/%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%D7%9D\-%D7%91%D7%91%D7%A0%D7%99%D7%99%D7%94\.aspx/?$ שיעורים-בבנייה.html
+redirectMatch 301 ^/%d7%a9%d7%99%d7%a2%d7%95%d7%a8%d7%99%d7%9d\-%d7%91%d7%91%d7%a0%d7%99%d7%99%d7%94\.aspx/?$ en_שיעורים-בבנייה.html

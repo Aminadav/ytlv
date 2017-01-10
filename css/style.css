@@ -1,0 +1,559 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 14:48:26 Dec 9, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:15:48 Jan 10, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/*html, body 
+{
+min-height: 100% !important;
+}*/
+
+body 
+{
+    direction: rtl;
+    font-family: Arial, Sans-Serif;
+    min-height : 100% !important;
+    font-size : 16px;
+    background: url(/images/underFooter.jpg) center repeat-y;
+}
+
+h1 {
+    color: #58585a;
+    font-size: 21px;
+    padding-right: 50px;
+}
+
+.pageBg
+{
+  background: #d9dadb url(/images/pageBg.jpg) center no-repeat;
+  position: relative;
+  min-height: 440px;
+  z-index: 2;
+}
+.pageWrap {
+  width: 1000px;
+  margin: 0 auto;
+  min-height: 400px;
+  position: relative;
+}
+#logoImg{
+  position: absolute;
+  top: -100px;
+  right: 10px;
+}
+
+.clearfix {clear: both; height: 0;}
+
+.nav_bg
+{
+    background: url(/images/navBg.jpg) no-repeat;
+    height: 100px;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+img, a img
+{
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+ul, ol
+{
+  list-style-position: inside;
+}
+
+/* ================= header =================== */
+.header
+{
+  height: 100px;
+  background: url(/images/headerBg.jpg) repeat-x;
+  clear: both;
+}
+
+.LanguageSwitcher{
+  float:left;
+  padding-top: 5px;
+}
+/* ================ nav ======================== */
+.navigation 
+{
+  padding: 60px 200px 0 0;    
+  width: 800px;
+  height: 38px;
+}
+.navigation li ul{
+  width: 116px;
+}
+.navigation li ul li.inner_li a
+{
+  background: url(/images/DDline.png) center bottom no-repeat,
+			  url(/images/DD1px.png) right repeat-y;
+}
+.navigation li ul li:last-child a
+{background: url(/images/DDBottom.png) center bottom no-repeat;}
+.navigation li.main
+{
+  float: right;
+  list-style: none;
+  margin-left: 0px;
+  display: inline;
+  height: 43px;
+  background: url(/images/DDline2.png) top -4px left no-repeat;
+  padding: 0 2px;
+}
+.navigation li.main:last-child
+{ background: none;}
+
+.navigation:nth-child(2)
+{ padding: 0 2px;}
+
+.navigation li.main:first-child ul
+{ right: -19px;}
+
+.navigation li a
+{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+.navigation li.main a.main_nav:hover,  li.sfHover a.main_nav, li.main a.selected:hover
+{
+  color: #e9512e;
+}
+
+/* ================ footer ===================== */
+#footer
+{
+  height: 109px;
+}
+#UpperFooter {
+    height: 109px;
+    background: url(/images/footerBgBg.jpg) repeat-x;
+}
+#UFimg {
+    height: 109px;
+    width: 1054px;
+    margin: 0px auto;
+    background: url(/images/footerBg.png) bottom no-repeat;
+}
+#creditLine{
+    width:1000px;
+    margin: 2px auto; 
+    color:white; 
+    font-size: 14px;
+    opacity: 0.5;
+}  
+#creditLine a, #creditLine a:visited, #creditLine a:hover, #creditLine a:active {color:white; text-decoration:none}
+/* ================= Home Page ======================== */
+.leftCol {
+    width: 210px;
+    min-height: 340px;
+    float: left;
+    position: absolute;
+    top: 9px;
+    left: 0px;
+}
+
+.leftCol img{
+    position: relative;
+    top: 5px;
+    float: left;
+}
+
+.rightCol {
+    width: 605px;
+    min-height: 300px;
+    position: absolute;
+    top: 0px;
+    right: 185px;
+}
+.eveBtn {
+    position: absolute;
+    right: -192px;
+    top: 60px;
+}
+.madafLink{
+	margin-right: -180px;
+	color: rgba(255,255,255,.5);
+	text-decoration: none;
+	font-size: 0.9em;
+}
+.madafLink{color: rgba(255,255,255,.7);}
+/* ================= Inner Pages ======================== */
+.contentPageWrap {
+    width: 809px;
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    background: url(/images/1pxWhiteFaded.png);
+    height: 440px;    
+}
+
+.imgTitle{
+    float: left; 
+    position: relative; 
+    display: block; 
+    margin-left: 53px;
+}
+
+.imgTitleLeft{
+    background: url(/images/leftCorner.png); 
+    display: block; 
+    float: left; 
+    height: 33px; 
+    width: 15px;
+}
+
+.imgTitleCenter{
+    background-color: #e3211c; 
+    float: left; 
+    height: 28px;  
+    padding-top: 5px; 
+}
+.imgTitleCenter h2{
+    color: white; 
+    font-size: 17px;
+}
+
+.imgTitleRight{
+    background: url(/images/rightCorner.png); 
+    display: block; 
+    float: right; 
+    height: 33px; 
+    width: 15px;
+}
+
+.ContentText {
+    margin-right: 24px;
+    margin-left: 34px;
+    font-size: 13px;
+    color: #58585a;
+    line-height: 20px;
+    text-align: justify;
+    height: 200px;
+}
+
+.ContentText a{
+  text-decoration: none;
+  color: gray;
+}
+.ContentText a:hover{color: black}
+
+#slideshow {
+    position:relative;
+    height:117px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+table a,table a:visited,table a:active{color: gray; font-size: 16px;}
+table a:hover{color: black;}
+
+.ContactUs
+{
+    padding-top: 5px;
+    width: 360px;
+    float: right;
+}
+
+.ContactUs fieldset
+{
+    text-align: center;
+    width: 360px;
+    border: none;
+}
+
+.ContactUs label
+{
+    float: right;
+    width: 40px;
+    text-align: left;
+    padding: 1px 0 0 10px;
+    display: block;
+}
+
+.ContactUs input[type="text"]
+{
+    width: 300px;
+    height: 25px;
+    float: right;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    padding-right:3px;
+	background: rgba(255,255,255,.7);
+}
+
+.ContactUs textarea
+{
+    width: 300px;
+    height: 100px;
+    float: right;
+    border: 1px solid gray;
+    padding:3px;
+	background: rgba(255,255,255,.7);
+}
+
+.btn_send
+{
+    margin-top: 72px;    
+    float: left;
+    margin-left: -90px;
+    height: 30px;
+    font-size: 16px;
+}
+
+#contactDetails{
+    float: right;
+    margin-right: 140px;
+    line-height: 24px;
+    }
+.FBDiv {
+  height:120px;
+  overflow:auto; 
+  font-size:13px; 
+  line-height: 23px;
+  color: #58585a;
+}
+/* -=-=-=-=-= Shiurim-Page =-=-=-=-=- */
+.column {
+	display: inline-block;
+	vertical-align: top;
+	color: #58585a;
+}
+.shiurimContentOne {
+	height: 200px;
+	width: 250px;
+}
+.shiurimContentTwo {
+	height: 370px;
+	width: 320px;
+}
+.Shiurim {
+	border: 1px solid #cecece;
+	padding: 10px;
+	background: rgba(255,255,255,.6);
+	margin-right: 20px;
+}
+.Shiurim a {
+	color: #58585a;
+	text-decoration: none;
+}
+.Shiurim a:hover {
+	color: #000;
+}
+#ShiurimSubjects {
+	height: 326px;
+	width: 250px;
+	margin-right: 40px;	
+}
+#ShiurimSubjects li, #ShiurimLinks li {
+	position: relative;
+}
+#ShiurimSubjects input {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	opacity: 0;
+}
+#ShiurimLinks {
+	height: 390px;
+	width: 408px;
+	margin-top: 28px;
+}
+#ShiurimSubjects ul, #ShiurimLinks ul {
+	list-style: none;
+	margin-right: 20px;
+}
+#ShiurimLinks h2 {
+	margin: 5px 20px;
+	color: black;
+}			
+#lessonsList li{
+	color: #555;
+	margin-right: 10px;
+	float:right;
+	width: 225px;
+}
+#lessonsList a{
+	color: #555;
+}
+#lessonsList a:visited{
+	color: gray;
+}
+#lessonsList a:hover{
+	color:black;
+}
+#googleMap{
+  position: absolute; 
+  left: 20px; 
+  top: 220px;
+}
+.arrow {
+	position: absolute;
+	right: -10px;
+}
+.iHaveGrandChildrens:hover {
+	cursor: pointer;
+	color: black;
+}
+.iHaveGrandChildrens label{
+	cursor: pointer;
+}
+audio{
+	width: 270px;
+	height: 30px;
+	margin: 10px 40px 10px 0px;
+}
+
+
+.MediaLibrery{
+	width: 809px;
+	height: 230px;
+	border: 0px;
+	overflow-x: hidden;
+}
+.thanks{
+	display: none;
+	background: lightgreen;
+	border: 1px solid green;
+	padding: 0px 5px;
+	width: 162px;
+}
+/*.infoSymbol{
+	position: relative;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background: gray;
+	margin: -1px 5px;
+	vertical-align: top;
+}
+.infoSymbol:after{
+	content: "i";
+	color: white;
+	position: absolute;
+	right: 6px;
+	top: 0px;
+	font-weight: bold;
+}
+.dwnldNote{
+	position: absolute;
+	left: -200px;
+	width: 180px;
+	background: rgba(255,255,255,.8);
+	box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+	padding: 5px;
+	display: none;
+}
+.infoSymbol:hover .dwnldNote{display: block}
+*/
+.ieDwnNote{
+	position: absolute;
+	top: 2px;
+	font-size: 11.5px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	color: #b99f42;
+}
+.clickArrow{
+	position: absolute;
+	top: 28px;
+	left: 500px;
+	font-size: 27px;
+	color: #b99f42;
+}
+.clickArrow span{
+	border-top: 2px solid #b99f42;
+	position: absolute;
+	left: -22px;
+	top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
