@@ -1,0 +1,255 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/*html, body 
+{
+min-height: 100% !important;
+}*/
+
+body 
+{
+    direction: ltr;
+    font-family: Arial, Sans-Serif;
+    min-height : 100% !important;
+    font-size : 16px;
+    background: url(/images/underFooter.jpg) center repeat-y;
+}
+
+h1 {
+    color: #58585a;
+    font-size: 21px;
+    padding-left: 50px;
+}
+
+.pageBg
+{
+  background: #d9dadb url(/images/pageBg.jpg) center no-repeat;
+  position: relative;
+  min-height: 440px;
+  z-index: 2;
+}
+.pageWrap {
+  width: 1000px;
+  margin: 0 auto;
+  min-height: 400px;
+  position: relative;
+}
+#logoImg{
+  position: absolute;
+  top: -100px;
+  right: 10px;
+}
+
+.clearfix {clear: both; height: 0;}
+
+.nav_bg
+{
+    background: url(/images/navBg.jpg) no-repeat;
+    height: 100px;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+img, a img
+{
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+ul, ol
+{
+  list-style-position: inside;
+}
+
+/* ================= header =================== */
+.header
+{
+  height: 100px;
+  background: url(/images/headerBg.jpg) repeat-x;
+  clear: both;
+}
+
+.LanguageSwitcher{
+  float:left;
+  padding-top: 5px;
+}
+/* ================ nav ======================== */
+.navigation 
+{
+  padding: 60px 200px 0 0;    
+  width: 820px;
+  height: 38px;
+}
+.navigation li ul li.inner_li a
+{
+  background: url(/images/DDline.png) center bottom no-repeat,
+			  url(/images/DD1pxEn.png) right repeat-y;
+}
+.navigation li ul li:last-child a
+{ background: url(/images/DDBottomEn.png) center bottom no-repeat;}
+.navigation li ul
+{
+  left: -6px;
+  width: 150px;	
+}
+.navigation li.main
+{
+  float: left;
+  list-style: none;
+  margin-left: 0px;
+  display: inline;
+  height: 43px;
+  background: url(/images/DDline2.png) top -4px right no-repeat;
+  padding: 0 2px;
+}
+.navigation li.main:last-child
+{ background: none;}
+
+.navigation:nth-child(2)
+{ padding: 0 2px;}
+
+.navigation li.main:first-child ul
+{ left: 2px;}
+
+.navigation li a
+{
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+.navigation li.main a.main_nav:hover,  li.sfHover a.main_nav, li.main a.selected:hover
+{
+  color: #e9512e;
+}
+
+/* ================ footer ===================== */
+#footer
+{
+  height: 109px;
+}
+#UpperFooter {
+    height: 109px;
+    background: url(/images/footerBgBg.jpg) repeat-x;
+}
+#UFimg {
+    height: 109px;
+    width: 1054px;
+    margin: 0px auto;
+    background: url(/images/footerBg.png) bottom no-repeat;
+}
+#creditLine{
+    width:1000px;
+    margin: 2px auto; 
+    color:white; 
+    font-size: 14px;
+    opacity: 0.5;
+}  
+#creditLine a, #creditLine a:visited, #creditLine a:hover, #creditLine a:active {color:white; text-decoration:none}
+/* ================= Home Page ======================== */
+.leftCol {
+    width: 210px;
+    min-height: 340px;
+    float: left;
+    position: absolute;
+    top: 9px;
+    left: 0px;
+}
+
+.leftCol img{
+    position: relative;
+    top: 5px;
+    float: left;
+}
+
+.rightCol {
+    width: 605px;
+    min-height: 300px;
+    position: absolute;
+    top: 0px;
+    right: 180px;
+}
+.eveBtn {
+    position: absolute;
+    right: -192px;
+    top: 60px;
+}
+
+/* ================= Inner Pages ======================== */
+.contentPageWrap {
+    width: 809px;
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    background: url(/images/1pxWhiteFaded.png);
+    height: 440px;    
+}
+
+.imgTitle{
+    float: right; 
+    position: relative; 
+    display: block; 
+    margin-right: 53px;
+}
+
+.imgTitleLeft{
+    background: url(/images/leftCorner.png); 
+    display: block; 
+    float: left; 
+    height: 33px; 
+    width: 15px;
+}
+
+.imgTitleCenter{
+    background-color: #e3211c; 
+    float: left; 
+    height: 28px;  
+    padding-top: 5px; 
+}
+.imgTitleCenter h2{
+    color: white; 
+    font-size: 17px;
+}
+
+.imgTitleRight{
+    background: url(/images/rightCorner.png); 
+    display: block; 
+    float: right; 
+    height: 33px; 
+    width: 15px;
+}
+
+.ContentText {
+    margin-right: 24px;
+    margin-left: 34px;
+    font-size: 13px;
+    color: #58585a;
+    line-height: 20px;
+    text-align: justify;
+    height: 200px;
+}
+
+.ContentText a{
+  text-decorbKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/crop-icon.png HTTP/1.1" 200 508 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/redo-icon.png HTTP/1.1" 200 569 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/line-size-icon.png HTTP/1.1" 200 204 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/undo-icon.png HTTP/1.1" 200 576 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/save.png HTTP/1.1" 200 611 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/share.png HTTP/1.1" 200 3304 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/pdf.png HTTP/1.1" 200 528 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/copy.png HTTP/1.1" 200 448 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/thumbnail.png HTTP/1.1" 200 4549 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/print.png HTTP/1.1" 200 484 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/gmail.png HTTP/1.1" 200 438 "http://www.webpagescreenshot.info/chrome-extension/editor.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/editor-background.png HTTP/1.1" 200 949 "http://www.webpagescreenshot.info/chrome-extension/css/style.css" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/dropbox.png HTTP/1.1" 200 470 "http://www.webpagescreenshot.info/chrome-extension/editor.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/facebook.png HTTP/1.1" 200 305 "http://www.webpagescreenshot.info/chrome-extension/editor.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/evernote.png HTTP/1.1" 200 430 "http://www.webpagescreenshot.info/chrome-extension/editor.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/wordpress.png HTTP/1.1" 200 663 "http://www.webpagescreenshot.info/chrome-extension/editor.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36"
+112.251.136.134 - - [07/Nov/2016:04:36:49 +0200] "GET /chrome-extension/images/email.png HTTP/1.1" 200 468 "http://www.webpagescreenshot.info/chrome-extension/editor.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.26

@@ -1,0 +1,65 @@
+* {margin:0;padding:0}
+
+
+body {height:1360px; width: 768px;
+      background-image: url(/images/bg.jpg);
+      background-position: letf center;
+      background-repeat: no-repeat;
+      margin-top: 0px;
+      position: absolute;
+      
+}
+
+
+body .continer { background-image: url(/images/lt.png);
+            height: 650px; width: 576px;
+            margin: 580px 90px;
+            position: absolute; 
+}
+
+body .continer2 { background-image: url(/images/REF.png);
+            height: 650px; width: 576px;
+            margin: 580px 90px;
+            position: absolute; 
+}
+
+body .continer3 { background-image: url(/images/nis.png);
+            height: 650px; width: 576px;
+            margin: 580px 100px;
+            position: absolute; 
+			float:left;
+}
+body .continer4 { background-image: url(/images/succes.png);
+            height: 650px; width: 576px;
+            margin: 580px 90px;
+            position: absolute; 
+}
+
+.text {
+		margin-top:240px;
+        text-align: center;
+		font: ariel;
+		font-size: 67px;
+		color:#0e2e66;
+}
+
+.time {
+    text-align: center;
+    margin-top: 50px;
+    font: ariel;
+    font-size: 40px;
+    color:#0e2e66;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
