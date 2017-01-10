@@ -48,7 +48,7 @@ right: 0px;
 
 .slides_container {
   width:600px;
-  overflow:hidden;
+  overflow: visible!important;
   position:relative;
   display:none;
 }
