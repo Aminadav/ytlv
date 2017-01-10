@@ -5,7 +5,7 @@
 $.ajax({
 	url:'files.html'
 }).then(function(files){
-	files=files.split('\r')
+	files=files.split('\n')
 	for (var i in files){
 		var e
 		if (files[i].match(/\./)){
