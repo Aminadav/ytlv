@@ -1,0 +1,34 @@
+<html>
+<head>
+<script src="scripts/jquery-1.9.1.min.js"></script>
+<script>
+$.ajax({
+	url:'files.html'
+}).then(function(files){
+	files=files.split('\r')
+	for (var i in files){
+		var e
+		if (files[i].match(/\./)){
+			e=$('<a>')[0]
+			e.href=files[i].replace('gs://','https://storage.googleapis.com/')
+		}
+		else{
+			e=$('<b>')[0]
+		}
+		e.innerHTML=files[i]
+		e.innerHTML=e.innerHTML.replace('gs://ytlv/','')
+		e.innerHTML=e.innerHTML.replace(/\//g,' - ')
+		e.innerHTML=e.innerHTML.replace('gs://ytlv/','').replace(/\..{2,4}$/g,'')
+		$(document.body).append(e)
+	}
+})
+</script>
+<style>
+	a{
+		display:block;
+	}
+</style>
+</head>
+<body dir="rtl">
+</body>
+</html>
