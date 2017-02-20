@@ -1,1 +1,251 @@
-404 page not found
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+
+
+
+
+      <meta id="CurrentLanguage" http-equiv="content-language" content="en" />
+    <link rel="alternate" hreflang="he" href="http://ytlv.co.il/היה-שותף!.aspx" />
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8"> 	
+  <title>Yeshiva Gevoha Ma’aleh Eliyahu</title>
+  <meta name="description" content='' />
+  <meta name="keywords" content='' /> 
+  <meta name="robots" content='' >
+  
+ 
+  <!--======== JQuery =========-->
+ 
+  <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery-migrate-1.1.1.min.js"></script>
+	<script>
+      function getLang() { 
+		  var metas = document.getElementsByTagName('meta'); 
+		  
+		  for (i=0; i<metas.length; i++) { 
+			  if (metas[i].getAttribute("id") == "CurrentLanguage") { 
+				  return metas[i].getAttribute("content"); 
+			  } 
+		  } 
+		  
+		  return "";
+	  } 
+		var CL= getLang();
+		if( CL=="en"){
+			$('head').append('<link href="/css/styleEn.css" rel="stylesheet" type="text/css">');			
+		}else{
+			$('head').append( '<link href="/css/style.css" rel="stylesheet" type="text/css">');
+		};
+		$(document).ready(function(){
+			if( CL=="en"){document.getElementById("logoImg").src = "/images/logoEn.png";};
+		});
+	</script>
+  
+   <!-- ============ dropDown Menu ============== -->
+    <link rel="stylesheet"  href="css/superfish.css" /> 
+      <script type="text/javascript" src="scripts/dropdown/hoverIntent.js"></script>
+      <script type="text/javascript" src="scripts/dropdown/superfish.js"></script>
+     <script type="text/javascript">     
+      jQuery(function(){
+        jQuery('ul.sf-menu').superfish();
+    });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.sf-with-ul').click(function (e) {
+                e.preventDefault();
+            });			
+        });
+    </script>
+  <!-- ============================================= -->
+
+  
+ 
+    <!-- =========== fancy box===================== -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.6.css" type="text/css" media="screen" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a.inline").fancybox({
+                'transitionIn': 'fade',
+                'transitionOut': 'fade',
+                'speedIn': 600,
+                'titleShow': false,
+                'speedOut': 200
+            });
+        });
+    </script>
+    <!-- ==================================================== -->
+    <!-- =================== JQ Preload Page ======================== -->
+  <script src="scripts/jquery.queryloader2.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $("#slideshow").queryLoader2({
+              barColor: "#d9dadc",
+              backgroundColor: "#d9dadc",
+              percentage: false,
+              barHeight: 1,
+              completeAnimation: "fade",
+              minimumTime: 100
+          });
+      });
+  </script>
+  <!-- ============================================================ -->
+ 
+  
+</head>
+<body>
+
+
+
+    
+  <div class="header">
+     <div class="nav_bg">
+		 <div class="LanguageSwitcher">
+		      <strong>
+        <img src="css/MultiLanguage/flags/us.png" alt="English" title="English"/></strong>
+    <a href="היה-שותף_.html">
+        <img src="css/MultiLanguage/flags/il.png" alt="עברית" title="עברית"/></a>
+
+		 </div>
+        <div class="wrapper">
+           <ul class="navigation sf-menu topnavi">
+            <li class="main"><a class="main_nav" href="/">About</a><ul class="dropdown"><li class="inner_li"><a class="inner_link" href="en_about/about-the-yeshiva.html">About the Yeshiva</a></li><li class="inner_li"><a class="inner_link" href="en_about/torah-soldiers.html">Torah Soldiers</a></li><li class="inner_li"><a class="inner_link" href="en_about/post-army.html">Post-Army</a></li></ul></li><li class="main"><a class="main_nav" href="en_torani-community.html">Torani Community</a><ul class="dropdown"><li class="inner_li"><a class="inner_link" href="en_torani-community/the-garin-torani.html">The Garin Torani</a></li><li class="inner_li"><a class="inner_link" href="en_torani-community/national-service-girls.html">National Service girls</a></li><li class="inner_li"><a class="inner_link" href="en_torani-community/kesher-bakehilla.html">Kesher Bakehilla</a></li></ul></li><li class="main"><a class="main_nav" href="en_activities-in-tel-aviv.html">Activities in Tel Aviv</a><ul class="dropdown"><li class="inner_li"><a class="inner_link" href="en_activities-in-tel-aviv/bar-mitzva-connection.html">Bar Mitzva Connection</a></li><li class="inner_li"><a class="inner_link" href="en_activities-in-tel-aviv/study-partners.html">Study Partners</a></li><li class="inner_li"><a class="inner_link" href="en_activities-in-tel-aviv/a-heart-for-the-sick.html">A Heart for the Sick</a></li><li class="inner_li"><a class="inner_link" href="en_activities-in-tel-aviv/bond-of-truth.html">Bond of Truth</a></li></ul></li><li class="main"><a class="main_nav" href="en_eliyahu-miron_-z_l.html">Eliyahu Miron, z”l</a></li><li class="main"><a class="main_nav" href="en_yeshiva-weeks.html">Yeshiva weeks</a></li><li class="main"><a href="en_be-a-partner_.html" class="selected">Be a Partner!</a></li><li class="main"><a class="main_nav" href="en_contact-us.html">Contact us</a></li>
+           </ul>
+        </div>
+    </div>
+  </div>
+  <div class="pageBg"> 
+    <div class="pageWrap">
+      <a href="en_index.html" title="ישיבת תל אביב ”מעלה אליהו“">
+             <img id="logoImg" src="images/logo.png" alt="ישיבת תל אביב ”מעלה אליהו“" />
+         </a>
+    
+    <div class="contentPageWrap">
+      
+        <div id="frame" style="height: 177px;">
+            <div id="slideshow" >
+                <img src='media/2628/beapartner.jpg' alt='Be a Partner!' class="active" />                 
+            </div>
+        </div>        
+        <div class="imgTitle">
+            <span class="imgTitleLeft"></span>
+          <span class="imgTitleCenter"><h2>Be a Partner!</h2></span>
+            <span class="imgTitleRight"></span>
+        </div>
+      <br /><h1 style="margin-top:-6px;">Be a Partner!</h1>
+        <div class="ContentText">            
+            <div style="padding-right: 0px;">
+                <p>The Yeshiva Gevoha of Tel Aviv is a registered nonprofit association. All donations are tax-deductible in Israel under Section 46 of the Income Tax Ordinance. We are association No. 580278316.</p>
+                <div style=" position:absolute; left: 10px; bottom: -3px; height:190px; width: 785px;">
+                    <table style="height: 100%; width: 100%;">
+                        <tbody>
+                            <tr style="height: 33%">
+                                <td style="width: 33%"></td>
+                                <td style="width: 33%""><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=GGTBF2B2DDWLC" title="Donate by Credit Card"><img src="images/paypalDon.png" alt="תרומה"/>
+                                <span style="position: absolute; top: 20px; margin-left: 10px;">Donate by Credit Card</span></a>
+                                <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                  <input type="hidden" name="cmd" value="_s-xclick">
+                                  <input type="hidden" name="hosted_button_id" value="SXUL59J9JM6NC">
+                                  <input type="image" src="http://ytlv.thewebbuilder.co.il/images/paypalDon.png" border="0" name="submit" alt="PayPal - הדרך הקלה והבטוחה לשלם באופן מקוון!">
+                                  <img alt="" border="0" src="https://www.paypalobjects.com/he_IL/i/scr/pixel.gif" width="1" height="1">
+                                </form>-->                                
+                                </td>
+                              <td style="width: 33%"><a href="media/2034/hokwide.pdf" target="_blank" title="Donate by Direct Debit"><img src="images/kevaDon.png" alt="תרומה"/>
+                                <span style="position: absolute; top: 20px; margin-left: 10px;">Donate by Direct Debit</span></a></td>
+                            </tr>
+                            <tr style="height: 33%">
+                                <td style="width: 33%"><a class="inline" href="#doar" title="Donate by Mail"><img src="images/mailDon.png" alt="תרומה"/>
+                                <span style="position: absolute; top: 83px; margin-left: 10px;">Donate by Mail</span></a></td>
+                                <td style="width: 33%"><a class="inline" href="#doarBank" title="Deposit at the Postal Bank"><img src="images/doarDon.png" alt="תרומה"/>
+                                <span style="position: absolute; top: 83px; margin-left: 10px;">Deposit at the Postal Bank</span></a></td>
+                                <td style="width: 33%"><a class="inline" href="#bank" title="Donate by Bank Transfer"><img src="images/bankDon.png" alt="תרומה"/>
+                                <span style="position: absolute; top: 83px; margin-left: 10px;">Donate by Bank Transfer</span></a></td>
+                            </tr>
+                            <tr style="height: 33%">
+                                <td style="width: 33%"><a class="inline" href="#usa" title="Tax-Deductible Contributions in the United States"><img src="images/usaDon.png" alt="תרומה"/>
+                                <span style="position: absolute; top: 145px; width: 210px; margin-left: 10px;">Tax-Deductible Contributions in the United States</span></a></td>
+                                <td style="width: 33%"><a class="inline" href="#england" title="Tax-Deductible Contributions in England"><img src="images/englandDon.png" alt="תרומה"/>
+                                <span style="position: absolute; top: 145px; width: 210px; margin-left: 10px;">Tax-Deductible Contributions in England</span></a></td>
+                                <td style="width: 33%"><a class="inline" href="#canada" title="Tax-Deductible Contributions in Canada"><img src="images/canadaDon.png" alt="תרומה"/>
+                                <span style="position: absolute; top: 145px; width: 210px; margin-left: 10px;">Tax-Deductible Contributions in Canada</span></a></td>
+                            </tr>                    
+                        </tbody>                    
+                    </table>
+                </div>
+            </div>
+        </div>      
+    </div>
+  <!-- ======================== fancybox ==========================  -->
+    <div style="display: none;">
+    <div id="usa" class="FBDiv" style="width:430px; ">
+      <h2>For tax-deductible contributions in the United States:</h2>
+<p> </p>
+<p style="direction: ltr;">The Central Fund of Israel</p>
+<p style="direction: ltr;">c/o Marcus Brothers Textiles 980 6th Ave, New York NY 10018</p>
+<p style="direction: ltr;">Attn: Arthur Marcus</p>
+    </div>        
+  </div>
+    <div style="display: none;">
+      <div id="canada" class="FBDiv" style="width:400px;">
+      <h2>For tax-deductible contributions in Canada:</h2>
+<p style="direction: ltr;"> </p>
+<p style="direction: ltr;">Beth Oloth        </p>
+<p style="direction: ltr;">c/o  32 Brookview Dr. Toronto, Ont. M6A2K2</p>
+    </div>
+    </div>
+    <div style="display: none;">
+        <div id="england" class="FBDiv" style="width:400px;">
+      <h2>For tax-deductible contributions in England:</h2>
+<p> </p>
+<p>UK friends of Ma'aleh Eliahu</p>
+<p style="direction: ltr;">c/o Michael Paluch , 20 Shirehall Park, London NW4</p>
+<p style="direction: ltr;">michael.paluch@gmail.com      </p>
+    </div>
+    </div>
+    <div style="display: none;">
+    <div id="doar" class="FBDiv" style="width:400px;">
+      <h2><span>By mail to</span></h2>
+<p dir="RTL"> </p>
+<p style="direction: ltr;" dir="RTL">The Yeshiva Gevoha of Tel Aviv</p>
+<p style="direction: ltr;" dir="RTL">6 Henrietta Szold Street, POB 33619</p>
+<p style="direction: ltr;" dir="RTL">Tel Aviv 61336</p>
+    </div>        
+  </div>
+    <div style="display: none;">
+        <div id="doarBank" class="FBDiv" style="width:400px;">
+      <h2>By deposit at the Postal Bank (at any Israeli post office)</h2>
+<p style="direction: ltr;" dir="RTL"> </p>
+<p style="direction: ltr;" dir="RTL">Account No. 8828850<br /> Main branch, Jerusalem</p>
+    </div>
+    </div>
+    <div style="display: none;">
+        <div id="bank" class="FBDiv" style="width:400px;">
+      <h2>By bank transfer to:</h2>
+<p> </p>
+<p style="direction: ltr;" dir="RTL">Bank Poalei Agudat Yisrael (bank No. 52)<br /> Shlomzion Branch (branch No. 182)<br /> Account No. 728977<br /> To the account of the Yeshiva Gevoha of Tel Aviv</p>
+    </div>
+    </div>
+  <!-- ================================================================== -->
+    </div>  
+  </div>
+  <div id="footer">
+    <div id="UpperFooter">
+        <div id="UFimg"></div>        
+    </div>
+    <div id="creditLine">
+      <span style="float:right">Developed by: TWB. Designed by: Studio-Maof</span>
+        <span style="float:left">The Yeshiva Gevoha of Tel Aviv 6 Henrietta Szold Street, Tel: 03-6959917</span>
+    </div>
+  </div>
+  
+</body>
+</html>
